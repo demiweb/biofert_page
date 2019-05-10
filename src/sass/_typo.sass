@@ -13,6 +13,10 @@ h1, h2, h3, h4, h5, h6
   +css-lock(24, 30, 576, 1199, font-size)
 
 .h4, h4
+  text-transform: uppercase
+  +bold
+  color: #2f2f2f
+  font-size: 16px
 
 .h5, h5
 
@@ -26,3 +30,15 @@ h1, h2, h3, h4, h5, h6
     font-size: 14px
   p
     margin-bottom: 5px
+
+.title-underlined
+  padding-bottom: 15px
+  position: relative
+  +before
+    position: absolute
+    width: 50px
+    height: 2px
+    background-color: #005948
+    left: 50%
+    transform: translate(-50%, 0)
+    bottom: 0

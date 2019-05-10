@@ -1,0 +1,31 @@
+.footer
+  background-color: #ededed
+  padding-top: 7%
+  padding-bottom: 7%
+  text-align: center
+  &__title
+    margin-bottom: 40px
+
+.footer-contacts
+  position: relative
+  +before
+    position: absolute
+    height: 95%
+    top: 0
+    transform: translate(-50%, 0)
+    right: 50%
+    background-color: #d5d5d5
+    width: 1px
+    +xs
+      display: none
+  &__title
+    margin-bottom: 14px
+  &__block
+    position: relative
+    max-width: 250px
+    margin-left: auto
+    margin-right: auto
+    +xs
+      margin-bottom: 20px
+  &__contact
+

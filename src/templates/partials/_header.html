@@ -1,1 +1,52 @@
-<p>Hello from partials/_header.html</p>
+<!-- begin header -->
+<header class="header">
+  <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 col-12">
+          <div class="header__logo">
+            <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-xl-8 col-lg-5 col-md-4 col-sm-3 col-12">
+          <div class="header__lang">
+            {% if lang === 'ua' %}
+            {{ mixins.list(
+              name = 'lang',
+              modifications = { wrap: '', item: '', link: '' },
+              list = [
+                { item: '', link: 'ua', href: 'page-ua.html', modLink: 'is-active' },
+                { item: '/', link: '', modItem: '', modLink: '' },
+                { item: '', link: 'en', href: 'page-en.html' }
+              ]
+            ) }}
+            {% endif %}
+
+            {% if lang === 'en' %}
+            {{ mixins.list(
+              name = 'lang',
+              modifications = { wrap: '', item: '', link: '' },
+              list = [
+                { item: '', link: 'ua', href: 'page-ua.html' },
+                { item: '/', link: '', modItem: '', modLink: '' },
+                { item: '', link: 'en', href: 'page-en.html', modLink: 'is-active' }
+              ]
+            ) }}
+            {% endif %}
+          </div>
+        </div>
+
+        <div class="col-xl-2 col-lg-4 col-md-4 col-sm-5 col-12">
+          <div class="header__contacts">
+            <!-- begin contaacts -->
+            <div class="contacts">
+              <a href="tel:+380352225512" class="contact">+38 (0352) 22-55-12</a>
+              <a href="tel:+380676797940" class="contact">+38 (067) 67-97-940</a>
+            </div>
+            <!-- end contaacts -->
+          </div>
+        </div>
+      </div>
+  </div>
+</header>
+<!-- end header -->

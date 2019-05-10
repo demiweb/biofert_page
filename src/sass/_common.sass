@@ -46,3 +46,26 @@ body
 
 .icon
   display: inline-block
+
+.lang
+  li
+    display: inline-block
+  a
+    text-transform: uppercase
+    color: #005948
+    &.is-active
+      text-decoration: underline
+    +hover
+      text-decoration: underline
+
+.out
+  overflow-x: hidden
+
+.contact
+  +bold
+  font-size: 16px
+  display: block
+  color: #2f2f2f
+  &:first-child
+    color: #005948
+

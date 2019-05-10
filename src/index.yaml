@@ -1,4 +1,5 @@
 ProjectTitle: template
 
 PageList:
-- file: page.html
+- file: page-ua.html
+- file: page-en.html

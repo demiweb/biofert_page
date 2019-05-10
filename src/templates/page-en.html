@@ -1,0 +1,30 @@
+---
+title: page-en
+lang: 'en'
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+  {% include "partials/_header.html" %}
+  <!-- begin banner -->
+  <div class="banner">
+    <img src="img/banner.jpg" alt="">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="banner__title">
+            <h3 class="h3">Сайт знаходиться в стадії розробки</h3>
+          </div>
+          <div class="banner__text text">
+            <p>Оновлена версія сайту буде доступна з 1 червня 2019 року.</p>
+            <p>За останніми новинами слідкуйте на нашій сторінці у фейсбук: <a href="#">{{ mixins.icon('facebook-circle') }}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end banner -->
+
+  {% include "partials/_footer.html" %}
+{% endblock %}

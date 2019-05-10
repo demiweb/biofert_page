@@ -1,9 +1,11 @@
 ---
-title: Index page
+title: page-ua
+lang: 'ua'
 ---
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
+  {% include "partials/_header.html" %}
   <!-- begin banner -->
   <div class="banner">
     <img src="img/banner.jpg" alt="">
@@ -23,4 +25,6 @@ title: Index page
     </div>
   </div>
   <!-- end banner -->
+
+  {% include "partials/_footer.html" %}
 {% endblock %}
