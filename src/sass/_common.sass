@@ -1,0 +1,48 @@
++font('opensans-regular', 'opensans-regular-webfont')
++font('opensans-bold', 'opensans-bold-webfont')
+
+=reg
+  font-family: 'opensans-regular', Arial, sans-serif
+=bold
+  font-family: 'opensans-bold', Arial, sans-serif
+
+
+=lg
+  +r(1199)
+    @content
+=md
+  +r(991)
+    @content
+=sm
+  +r(767)
+    @content
+=xs
+  +r(575)
+    @content
+
+=lgmin
+  +r(1200)
+    @content
+=mdmin
+  +r(992)
+    @content
+=smmin
+  +r(768)
+    @content
+=xsmin
+  +r(576)
+    @content
+
+
+body
+  background: #FFF
+  line-height: 1.4
+  font-size: 16px
+  +reg
+  color: $c-text
+  +no-scroll
+  +sm
+    font-size: 14px
+
+.icon
+  display: inline-block
